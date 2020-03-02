@@ -1,7 +1,7 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.pig4cloud.pig.common.core.config.JacksonConfig,\
-  com.pig4cloud.pig.common.core.config.RedisTemplateConfig,\
-  com.pig4cloud.pig.common.core.config.RestTemplateConfig,\
-  com.pig4cloud.pig.common.core.exception.GlobalExceptionHandler,\
-  com.pig4cloud.pig.common.core.util.SpringContextHolder,\
-  com.pig4cloud.pig.common.core.mybatis.WebMvcConfig
+ sh.budao.common.core.config.JacksonConfig,\
+ sh.budao.common.core.config.RedisTemplateConfig,\
+ sh.budao.common.core.config.RestTemplateConfig,\
+ sh.budao.common.core.exception.GlobalExceptionHandler,\
+ sh.budao.common.core.util.SpringContextHolder,\
+ sh.budao.common.core.mybatis.WebMvcConfig
