@@ -1,9 +1,8 @@
 # samples
 Spring cloud - consul - gate-way 
-- common - service
+- common
 - auth
 - codegen
 - monitor
 - register 
-- upms : user permissions micro service
-- services - mybatis - hibernate -jooq
+- services 
