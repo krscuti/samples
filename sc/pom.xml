@@ -9,7 +9,9 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>common</module>
-        <module>common-log</module>
+        <module>services</module>
+        <module>auth</module>
+        <module>gate-way</module>
     </modules>
     <name>${project.artifactId}</name>
     <packaging>pom</packaging>
@@ -18,6 +20,7 @@
     <!-- no parent -->
 
     <properties>
+        <java.version>1.8</java.version>
         <parent-project.version>1.0-SNAPSHOT</parent-project.version>
         <!-- source build -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

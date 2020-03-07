@@ -10,6 +10,30 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>common-log</artifactId>
+    <packaging>jar</packaging>
+    <description>日志服务</description>
 
-
+    <dependencies>
+        <!--工具类核心包-->
+        <dependency>
+            <groupId>sh.budao</groupId>
+            <artifactId>common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--UPMS接口模块-->
+        <dependency>
+            <groupId>sh.budao</groupId>
+            <artifactId>upms-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--安全依赖获取上下文信息-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+        </dependency>
+    </dependencies>
 </project>

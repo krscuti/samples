@@ -16,6 +16,18 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+            <exclusions>
+                <!--排除tomcat依赖-->
+                <!--   <exclusion>
+                       <artifactId>spring-boot-starter-tomcat</artifactId>
+                       <groupId>org.springframework.boot</groupId>
+                   </exclusion>-->
+            </exclusions>
+        </dependency>
         <!--gateway 网关依赖,内置webflux 依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
