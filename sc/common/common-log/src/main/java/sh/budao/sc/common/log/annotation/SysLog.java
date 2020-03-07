@@ -1,6 +1,5 @@
 package sh.budao.sc.common.log.annotation;
 
-
 import java.lang.annotation.*;
 
 /**
