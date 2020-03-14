@@ -1,13 +1,13 @@
-package sh.budao.sc.gateway;
+package sh.budao.sc.services.upms.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-public class GateWayApplication {
+public class ApiApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GateWayApplication.class, args);
+        SpringApplication.run(ApiApplication.class, args);
     }
+
 }

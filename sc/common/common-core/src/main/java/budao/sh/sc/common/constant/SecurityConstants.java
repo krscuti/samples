@@ -82,4 +82,9 @@ public interface SecurityConstants {
 	 * 协议字段
 	 */
 	String DETAILS_LICENSE = "license";
+
+	/**
+	 * oauth 相关前缀
+	 */
+	String OAUTH_PREFIX = "oauth:";
 }

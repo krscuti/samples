@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>common-bom</artifactId>
+    <groupId>sh.budao</groupId>
+    <packaging>pom</packaging>
+    <version>${project.version}</version>
+    <description>公共版本控制</description>
+
+    <properties>
+        <project.version>1.0-SNAPSHOT</project.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <druid.version>1.1.21</druid.version>
+        <mysql.connector.version>8.0.19</mysql.connector.version>
+        <fastjson.version>1.2.62</fastjson.version>
+        <swagger.core.version>1.5.22</swagger.core.version>
+        <dynamic-ds.version>3.0.0</dynamic-ds.version>
+        <!--        <mp.weixin.version>3.6.0</mp.weixin.version>-->
+<!--        <ijpay.version>1.2.0</ijpay.version>-->
+<!--        <aliyun.version>3.0.52.ALL</aliyun.version>-->
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>sh.budao</groupId>
+                <artifactId>common-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>sh.budao</groupId>
+                <artifactId>common-data</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>sh.budao</groupId>
+                <artifactId>common-gateway</artifactId>
+                 <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>sh.budao</groupId>
+                <artifactId>upms-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>sh.budao</groupId>
+                <artifactId>common-swagger</artifactId>
+                 <version>${project.version}</version>
+            </dependency>
+            <!--mybatis plus extension,包含了mybatis plus core-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-extension</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!--mybatis-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+            <!-- druid 连接池 -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+            <!--mysql 驱动-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql.connector.version}</version>
+            </dependency>
+            <!--fastjson-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!--swagger 最新依赖内置版本-->
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-models</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.swagger</groupId>
+                <artifactId>swagger-annotations</artifactId>
+                <version>${swagger.core.version}</version>
+            </dependency>
+
+
+<!--
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-mp</artifactId>
+                <version>${mp.weixin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.binarywang</groupId>
+                <artifactId>weixin-java-common</artifactId>
+                <version>${mp.weixin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.github.javen205</groupId>
+                <artifactId>IJPay</artifactId>
+                <version>${ijpay.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.alipay.sdk</groupId>
+                <artifactId>alipay-sdk-java</artifactId>
+                <version>${aliyun.version}</version>
+            </dependency>
+-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
+                <version>${dynamic-ds.version}</version>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+</project>

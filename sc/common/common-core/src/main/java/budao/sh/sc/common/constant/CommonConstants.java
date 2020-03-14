@@ -30,6 +30,16 @@ public interface CommonConstants {
 	String UTF8 = "UTF-8";
 
 	/**
+	 * header 中租户ID
+	 */
+	String TENANT_ID = "TENANT-ID";
+
+	/**
+	 * 租户ID
+	 */
+	Integer TENANT_ID_1 = 1;
+
+	/**
 	 * JSON 资源
 	 */
 	String CONTENT_TYPE = "application/json; charset=utf-8";

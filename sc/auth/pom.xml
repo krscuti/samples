@@ -35,6 +35,12 @@
             <artifactId>common-security</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!--缓存操作-->
+        <dependency>
+            <groupId>sh.budao</groupId>
+            <artifactId>common-data</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <!--JDBC相关-->
         <dependency>
             <groupId>org.springframework.boot</groupId>

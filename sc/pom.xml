@@ -33,16 +33,25 @@
         <spring-platform.version>Cairo-SR8</spring-platform.version>
         <spring-boot-admin.version>2.2.2</spring-boot-admin.version>
         <hutool.version>5.1.5</hutool.version>
-        <mybatis-plus.version>3.3.0</mybatis-plus.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
         <swagger.fox.version>2.9.2</swagger.fox.version>
+        <ttl.version>2.11.2</ttl.version>
 <!--        <security.oauth.version>2.4.0.RELEASE</security.oauth.version>-->
         <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
         <jooq.version>3.13.1</jooq.version>
         <configration.version>2.2.4.RELEASE</configration.version>
         <!--        <velocity.version>1.7</velocity.version>-->
         <!--        <jasypt.version>2.1.0</jasypt.version>-->
+        <thymeleaf.version>2.2.5.RELEASE</thymeleaf.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>sh.budao</groupId>
+            <artifactId>common-bom</artifactId>
+            <version>${project.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
         <!--配置文件处理器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -125,6 +134,11 @@
                         <groupId>org.springframework.boot</groupId>
                     </exclusion>
                 </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${thymeleaf.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
