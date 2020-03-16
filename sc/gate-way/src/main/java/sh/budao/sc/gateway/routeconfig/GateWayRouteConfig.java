@@ -1,3 +1,4 @@
+/*
 package sh.budao.sc.gateway.routeconfig;
 
 import org.springframework.context.annotation.Bean;
@@ -14,3 +15,4 @@ public class GateWayRouteConfig {
                 .build();
     }
 }
+*/

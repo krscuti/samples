@@ -19,7 +19,8 @@ spring:
         #prefix设置配置值的基本文件夹，默认为config
         #defaultContext设置所有应用程序使用的文件夹名称，默认为spring的应用名称
         #profileSeparator设置用于使用配置文件在属性源中分隔配置文件名称的分隔符的值,默认为逗号
-#    gateway:
-#      routes:
-#        - id:
-#          uri
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
