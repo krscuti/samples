@@ -8,60 +8,57 @@
     <artifactId>sc</artifactId>
     <name>${project.artifactId}</name>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
-<!--        <module>common</module>-->
-<!--        <module>services</module>-->
-<!--        <module>auth</module>-->
-<!--        <module>gate-way</module>-->
+        <module>common</module>
+        <module>services</module>
+        <module>auth</module>
+        <module>gate-way</module>
+        <module>common</module>
     </modules>
 
-    <packaging>pom</packaging>
     <properties>
-        <parent-project.version>1.0-SNAPSHOT</parent-project.version>
+        <!-- project/build version-->
         <java.version>1.8</java.version>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- source build -->
-
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <kaptcha.version>0.0.9</kaptcha.version>
-        <!-- dependence version  -->
-        <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
-<!--        <spring-cloud.version>Hoxton.SR1</spring-cloud.version>-->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- spring version -->
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
-        <spring-platform.version>Cairo-SR8</spring-platform.version>
+        <spring-boot.version>2.2.5.RELEASE</spring-boot.version>
         <spring-boot-admin.version>2.2.2</spring-boot-admin.version>
-        <hutool.version>5.1.5</hutool.version>
-        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <spring-security.oauth.version>2.3.6.RELEASE</spring-security.oauth.version>
+        <spring-platform.version>Cairo-SR7</spring-platform.version>
+        <spring-framework.version>5.2.4.RELEASE</spring-framework.version>
+        <!-- verify code -->
+<!--        <kaptcha.version>0.0.9</kaptcha.version>-->
+        <easy.kaptcha.version>1.6.2</easy.kaptcha.version>
+
+        <!-- doc -->
         <swagger.fox.version>2.9.2</swagger.fox.version>
-        <ttl.version>2.11.2</ttl.version>
-<!--        <security.oauth.version>2.4.0.RELEASE</security.oauth.version>-->
-        <security.oauth.version>2.3.6.RELEASE</security.oauth.version>
-        <jooq.version>3.13.1</jooq.version>
-        <configration.version>2.2.4.RELEASE</configration.version>
-        <!--        <velocity.version>1.7</velocity.version>-->
-        <!--        <jasypt.version>2.1.0</jasypt.version>-->
+        <knife4j.version>2.0.1</knife4j.version>
+
+        <!-- html template -->
         <thymeleaf.version>2.2.5.RELEASE</thymeleaf.version>
+        <freemaker.version>2.2.5.RELEASE</freemaker.version>
+
+        <!-- util -->
+        <hutool.version>5.1.5</hutool.version>
+
+        <!-- data base access -->
+<!--        <mybatis-plus.version>3.3.1</mybatis-plus.version>-->
+<!--        <jooq.version>3.13.1</jooq.version>-->
+<!--        <jpa.version>2.2.4.RELEASE</jpa.version>-->
+
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>sh.budao</groupId>
-            <artifactId>common-bom</artifactId>
-            <version>${project.version}</version>
-            <type>pom</type>
-            <scope>import</scope>
-        </dependency>
         <!--配置文件处理器-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
             <optional>true</optional>
         </dependency>
-<!--        <dependency>
-            <groupId>com.github.ulisesbocchio</groupId>
-            <artifactId>jasypt-spring-boot-starter</artifactId>
-            <version>${jasypt.version}</version>
-        </dependency>-->
         <!--监控-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -95,6 +92,13 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>io.spring.platform</groupId>
+                <artifactId>platform-bom</artifactId>
+                <version>${spring-platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
@@ -102,9 +106,9 @@
                 <scope>import</scope>
             </dependency>
             <dependency>
-                <groupId>io.spring.platform</groupId>
-                <artifactId>platform-bom</artifactId>
-                <version>${spring-platform.version}</version>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${spring-framework.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -119,20 +123,13 @@
             <dependency>
                 <groupId>org.springframework.security.oauth</groupId>
                 <artifactId>spring-security-oauth2</artifactId>
-                <version>${security.oauth.version}</version>
+                <version>${spring-security.oauth.version}</version>
             </dependency>
             <!--web 模块-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${spring-boot.version}</version>
-                <exclusions>
-                    <!--排除tomcat依赖-->
-                    <exclusion>
-                        <artifactId>spring-boot-starter-tomcat</artifactId>
-                        <groupId>org.springframework.boot</groupId>
-                    </exclusion>
-                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.springframework.boot</groupId>
