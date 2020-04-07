@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    consul:
+      host: http://164.68.110.168
+      #      host: http://localhost
+      port: 8500

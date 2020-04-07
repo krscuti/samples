@@ -5,9 +5,19 @@ spring:
     name: gateway-service
   cloud:
     consul:
-#      host: http://107.179.13.169
-      host: http://localhost
+      host: http://164.68.110.168
+      #      host: http://localhost
       port: 8500
-      config:
-        enabled: true
-        format: yaml
+    #      config:
+    #        enabled: true
+    #        format: yaml
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id:
+          uri: lb://auth-service
+          predicates:
+            - Path=/auth/**
