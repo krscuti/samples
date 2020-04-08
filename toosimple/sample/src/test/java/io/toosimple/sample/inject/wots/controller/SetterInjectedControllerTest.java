@@ -4,14 +4,14 @@ import io.toosimple.sample.inject.wots.services.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class PropertyInjectedControllerTest {
+class SetterInjectedControllerTest {
 
-    PropertyInjectedController controller;
+    SetterInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new PropertyInjectedController();
-        controller.greetingService = new GreetingServiceImpl();
+        controller = new SetterInjectedController();
+        controller.setGreetingService(new GreetingServiceImpl());
     }
 
     @Test
