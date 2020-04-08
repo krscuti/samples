@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.toosimple</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>sample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>demo</name>
+    <name>sample</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
