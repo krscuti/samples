@@ -28,14 +28,17 @@ public class AnotherSpringbootApplication {
 
         SetterInjectedController setterInjectedController = (SetterInjectedController)ctx.getBean("setterInjectedController");
 
-        System.out.println(propertyInjectedController.getGreeting());
+        System.out.println(setterInjectedController.getGreeting());
 
-        System.out.println("----------propertyInjectedController");
+        System.out.println("----------constructorController");
 
         ConstructorInjectedController constructorInjectedController = (ConstructorInjectedController)ctx.getBean("constructorInjectedController");
 
-        System.out.println(propertyInjectedController.getGreeting());
+        System.out.println(constructorInjectedController.getGreeting());
 
+        System.out.println("----------myController --primary");
+
+        System.out.println(myController.getGreeting());
 
     }
 

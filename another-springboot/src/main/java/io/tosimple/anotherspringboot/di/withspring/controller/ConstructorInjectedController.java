@@ -1,6 +1,7 @@
 package io.tosimple.anotherspringboot.di.withspring.controller;
 
 import io.tosimple.anotherspringboot.di.withspring.service.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -14,7 +15,7 @@ public class ConstructorInjectedController {
      * not required of autowired
      * @param greetingService
      */
-    public ConstructorInjectedController(GreetingService greetingService) {
+    public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 
