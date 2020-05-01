@@ -1,4 +1,1 @@
-# samples
-# hey test
-
-sc: spring cloud sample
+# samples of learn spring framework and angularjs
