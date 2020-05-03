@@ -24,4 +24,7 @@ public class ExampleConfiguration {
         return new MyBeanConsumer(exampleConfigurationBean());
     }
 
+    /**
+     * @Configuration(@Component) and @Bean is using together by springboot
+     */
 }
