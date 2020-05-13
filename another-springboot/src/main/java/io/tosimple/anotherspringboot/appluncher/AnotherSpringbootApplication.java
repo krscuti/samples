@@ -1,4 +1,4 @@
-package io.tosimple.anotherspringboot;
+package io.tosimple.anotherspringboot.appluncher;
 
 import io.tosimple.anotherspringboot.annotations.configuration.ConfigurationedBean.ExampleConfigurationBean;
 import io.tosimple.anotherspringboot.annotations.configuration.MyBeanConsumer;
@@ -6,13 +6,14 @@ import io.tosimple.anotherspringboot.di.withspring.controller.MyController;
 import io.tosimple.anotherspringboot.di.withspring.controller.ConstructorInjectedController;
 import io.tosimple.anotherspringboot.di.withspring.controller.PropertyInjectedController;
 import io.tosimple.anotherspringboot.di.withspring.controller.SetterInjectedController;
-import io.tosimple.anotherspringboot.lifecycle.CustomBeanPostProcessor;
 import io.tosimple.anotherspringboot.lifecycle.LifeCycleDemoBean;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
+@ComponentScan(basePackages = {"io.tosimple.anotherspringboot"})
 public class AnotherSpringbootApplication {
 
     public static void main(String[] args) {
