@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>common</artifactId>
+        <groupId>io.tosimple.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+    <artifactId>common-security</artifactId>
+
+    <dependencies>
+        <!--工具类核心包-->
+        <dependency>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>common-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+<!--        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter</artifactId>
+        </dependency>-->
+        <!--安全模块 根本就不需要oath2 最多cloud+security-->
+<!--        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>-->
+<!--        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>-->
+<!--   包含在oauth中 所以springcloud security要么不用要么用oauth2，最简单的boot-security就可以了
+    oauth2的主要目的是为了接入第三方网站登陆，高那么麻烦没必要，除非你的网站想支持给其他网站用，
+    或者你自己的网站有多个子系统需要登陆，你才需要oauth，而且内部系统使用jwt+redis就可以实现单点登陆了
+    （内部系统知道用户信息就够了，也完全没必要分token可以获取哪些权限）
+    我认为的是完全没必要使用oauth
+
+    <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>-->
+        <!-- 但是实际上自动配置建立在设置配置值和配置类上
+        我们引入但是不配置使用也是可以的（不知道存不存在不配置属性也自动启动starter相关配置的情况） -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+        <!--feign-->
+        <dependency>
+            <groupId>io.github.openfeign</groupId>
+            <artifactId>feign-core</artifactId>
+        </dependency>
+        <!--aop-->
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>

@@ -12,13 +12,22 @@ spring:
         #prefix设置配置值的基本文件夹，默认为config
         #defaultContext设置所有应用程序使用的文件夹名称，默认为spring的应用名称
         #profileSeparator设置用于使用配置文件在属性源中分隔配置文件名称的分隔符的值,默认为逗号
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+  #        management-port: 8100
+  #        health-check-url: localhost:30080/health
+server:
+  port: 30080
+
+  profiles:
       discovery:
 #        healthCheckPath:
         service-name: ${spring.application.name}
         register-health-check: true
         health-check-path: /healthCheck
         healthCheckInterval: 15s
-#        management-port: 8100
-#        health-check-url: localhost:30080/health
-server:
-  port: 30080
+        instance-zone: zone1
+        instance-id: "${spring.cloud.client.hostname}:${spring.application.name}:${random.int[1,999999]}"
+        tags: zone=zone1
