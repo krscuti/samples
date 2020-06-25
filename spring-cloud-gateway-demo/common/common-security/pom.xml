@@ -18,14 +18,19 @@
             <artifactId>common-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-<!--        <dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter</artifactId>
+        </dependency>
+<!--        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
         </dependency>-->
+
         <!--安全模块 根本就不需要oath2 最多cloud+security-->
 <!--        <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -47,10 +52,10 @@
         </dependency>-->
         <!-- 但是实际上自动配置建立在设置配置值和配置类上
         我们引入但是不配置使用也是可以的（不知道存不存在不配置属性也自动启动starter相关配置的情况） -->
-        <dependency>
+<!--        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
+        </dependency>-->
         <!--feign-->
         <dependency>
             <groupId>io.github.openfeign</groupId>

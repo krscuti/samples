@@ -18,6 +18,7 @@
         <module>common-core</module>
         <module>common-data</module>
         <module>common-feign</module>
+        <module>common-gateway</module>
     </modules>
 
 </project>
