@@ -19,11 +19,11 @@
 
 package io.tosimple.demo.admin.api.feign;
 
-import com.pig4cloud.pigx.admin.api.dto.UserInfo;
-import com.pig4cloud.pigx.admin.api.entity.SysUser;
-import com.pig4cloud.pigx.common.core.constant.SecurityConstants;
-import com.pig4cloud.pigx.common.core.constant.ServiceNameConstants;
-import com.pig4cloud.pigx.common.core.util.R;
+import io.tosimple.demo.admin.api.dto.UserInfo;
+import io.tosimple.demo.admin.api.entity.SysUser;
+import io.tosimple.demo.common.core.constant.SecurityConstants;
+import io.tosimple.demo.common.core.constant.ServiceNameConstants;
+import io.tosimple.demo.common.core.util.R;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

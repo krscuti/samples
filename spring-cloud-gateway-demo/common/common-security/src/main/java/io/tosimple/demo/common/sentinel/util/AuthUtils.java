@@ -15,7 +15,7 @@
  * Author: lengleng (wangiegie@gmail.com)
  */
 
-package io.tosimple.demo.sentinel.util;
+package io.tosimple.demo.common.sentinel.util;
 
 import cn.hutool.core.codec.Base64;
 import lombok.SneakyThrows;

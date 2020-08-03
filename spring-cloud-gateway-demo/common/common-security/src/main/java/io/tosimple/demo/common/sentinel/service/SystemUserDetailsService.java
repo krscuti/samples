@@ -1,4 +1,4 @@
-package io.tosimple.demo.sentinel.service;
+package io.tosimple.demo.common.sentinel.service;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

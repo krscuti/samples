@@ -15,7 +15,7 @@
  * Author: lengleng (wangiegie@gmail.com)
  */
 
-package io.tosimple.demo.sentinel.service;
+package io.tosimple.demo.common.sentinel.service;
 
 import lombok.Getter;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;

@@ -14,11 +14,12 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 //@SpringBootApplication
 @Slf4j
 //@EnableDiscoveryClient
-@EnablePigxDynamicRoute
+//@EnablePigxDynamicRoute
 @SpringCloudApplication
 public class GatewayApplication {
 
     public static void main(String[] args) {
+        System.setProperty("nacos.standalone", "true");
         SpringApplication.run(GatewayApplication.class, args);
         log.info("==========，gateway启动了");
     }

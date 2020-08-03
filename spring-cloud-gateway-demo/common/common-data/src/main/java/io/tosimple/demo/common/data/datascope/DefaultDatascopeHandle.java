@@ -23,8 +23,8 @@ import io.tosimple.demo.admin.api.entity.SysRole;
 import io.tosimple.demo.admin.api.feign.RemoteDataScopeService;
 import io.tosimple.demo.common.core.constant.SecurityConstants;
 import io.tosimple.demo.common.data.enums.DataScopeTypeEnum;
-import io.tosimple.demo.sentinel.service.SystemUser;
-import io.tosimple.demo.sentinel.util.SecurityUtils;
+import io.tosimple.demo.common.sentinel.service.SystemUser;
+import io.tosimple.demo.common.sentinel.util.SecurityUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 
