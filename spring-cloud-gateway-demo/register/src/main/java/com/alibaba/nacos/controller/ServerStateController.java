@@ -39,7 +39,7 @@ public class ServerStateController {
 				: ApplicationUtils.STANDALONE_MODE_CLUSTER);
 
 		serverState.put("function_mode", ApplicationUtils.getFunctionMode());
-		serverState.put("version", VersionUtils.version);
+		serverState.put("version", VersionUtils.VERSION);
 
 		return ResponseEntity.ok().body(serverState);
 	}

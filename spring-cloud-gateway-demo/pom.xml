@@ -11,7 +11,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>gateway-service</module>
+        <module>gateway</module>
         <module>common</module>
         <module>auth</module>
         <module>register</module>
