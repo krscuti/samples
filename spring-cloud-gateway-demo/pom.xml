@@ -15,7 +15,6 @@
         <module>common</module>
         <module>auth</module>
         <module>upms</module>
-        <module>common/common-mysentinel</module>
     </modules>
 
     <properties>

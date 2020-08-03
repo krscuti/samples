@@ -15,12 +15,12 @@
  * Author: lengleng (wangiegie@gmail.com)
  */
 
-package io.tosimple.demo.security.util;
+package io.tosimple.demo.sentinel.util;
 
 
 import cn.hutool.core.util.StrUtil;
 import io.tosimple.demo.common.core.constant.SecurityConstants;
-import io.tosimple.demo.security.service.SystemUser;
+import io.tosimple.demo.sentinel.service.SystemUser;
 import lombok.experimental.UtilityClass;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;

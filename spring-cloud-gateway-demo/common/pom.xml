@@ -19,6 +19,7 @@
         <module>common-data</module>
         <module>common-feign</module>
         <module>common-gateway</module>
+        <module>common-sentinel</module>
     </modules>
 
 </project>
