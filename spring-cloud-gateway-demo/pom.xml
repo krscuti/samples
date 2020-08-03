@@ -14,6 +14,7 @@
         <module>gateway-service</module>
         <module>common</module>
         <module>auth</module>
+        <module>register</module>
         <module>upms</module>
     </modules>
 
