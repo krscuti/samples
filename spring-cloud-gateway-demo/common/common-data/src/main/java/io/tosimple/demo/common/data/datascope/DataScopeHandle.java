@@ -27,11 +27,11 @@ import java.util.List;
  */
 public interface DataScopeHandle {
 
-	/**
-	 * 计算用户数据权限
-	 *
-	 * @param deptList
-	 * @return
-	 */
-	Boolean calcScope(List<Integer> deptList);
+    /**
+     * 计算用户数据权限
+     *
+     * @param deptList
+     * @return
+     */
+    Boolean calcScope(List<Integer> deptList);
 }

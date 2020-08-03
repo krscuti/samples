@@ -31,51 +31,51 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 @Slf4j
 public class TenantHandler implements com.baomidou.mybatisplus.extension.plugins.tenant.TenantHandler {
-	@Autowired
-	private TenantConfigProperties properties;
+    @Autowired
+    private TenantConfigProperties properties;
 
-	/**
-	 * 获取租户值
-	 * <p>
-	 * TODO 校验租户状态
-	 *
-	 * @return 租户值
-	 */
-	@Override
-	public Expression getTenantId(boolean where) {
-		Integer tenantId = TenantContextHolder.getTenantId();
-		log.debug("当前租户为 >> {}", tenantId);
+    /**
+     * 获取租户值
+     * <p>
+     * TODO 校验租户状态
+     *
+     * @return 租户值
+     */
+    @Override
+    public Expression getTenantId(boolean where) {
+        Integer tenantId = TenantContextHolder.getTenantId();
+        log.debug("当前租户为 >> {}", tenantId);
 
-		if (tenantId == null) {
-			return new NullValue();
-		}
-		return new LongValue(tenantId);
-	}
+        if (tenantId == null) {
+            return new NullValue();
+        }
+        return new LongValue(tenantId);
+    }
 
-	/**
-	 * 获取租户字段名
-	 *
-	 * @return 租户字段名
-	 */
-	@Override
-	public String getTenantIdColumn() {
-		return properties.getColumn();
-	}
+    /**
+     * 获取租户字段名
+     *
+     * @return 租户字段名
+     */
+    @Override
+    public String getTenantIdColumn() {
+        return properties.getColumn();
+    }
 
-	/**
-	 * 根据表名判断是否进行过滤
-	 *
-	 * @param tableName 表名
-	 * @return 是否进行过滤
-	 */
-	@Override
-	public boolean doTableFilter(String tableName) {
-		Integer tenantId = TenantContextHolder.getTenantId();
-		// 租户中ID 为空，查询全部，不进行过滤
-		if (tenantId == null) {
-			return Boolean.TRUE;
-		}
+    /**
+     * 根据表名判断是否进行过滤
+     *
+     * @param tableName 表名
+     * @return 是否进行过滤
+     */
+    @Override
+    public boolean doTableFilter(String tableName) {
+        Integer tenantId = TenantContextHolder.getTenantId();
+        // 租户中ID 为空，查询全部，不进行过滤
+        if (tenantId == null) {
+            return Boolean.TRUE;
+        }
 
-		return !properties.getTables().contains(tableName);
-	}
+        return !properties.getTables().contains(tableName);
+    }
 }

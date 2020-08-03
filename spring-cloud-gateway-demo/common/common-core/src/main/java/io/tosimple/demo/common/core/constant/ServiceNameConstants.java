@@ -21,22 +21,23 @@ package io.tosimple.demo.common.core.constant;
 
 /**
  * @author lengleng
- * @date 2018年06月22日16:41:01
- * 服务名称
+ * @date 2018年06月22日16:41:01 服务名称
  */
 public interface ServiceNameConstants {
-	/**
-	 * 认证中心
-	 */
-	String AUTH_SERVICE = "pigx-auth";
 
-	/**
-	 * UMPS模块
-	 */
-	String UPMS_SERVICE = "upms-biz";
+    /**
+     * 认证中心
+     */
+    String AUTH_SERVICE = "pigx-auth";
 
-	/**
-	 * 分布式事务协调服务
-	 */
-	String TX_MANAGER = "pigx-tx-manager";
+    /**
+     * UMPS模块
+     */
+    String UPMS_SERVICE = "pigx-upms-biz";
+
+    /**
+     * 分布式事务协调服务
+     */
+    String TX_MANAGER = "pigx-tx-manager";
+
 }

@@ -45,56 +45,56 @@ import java.util.List;
 @AutoConfigureAfter(DataSourceAutoConfiguration.class)
 public class MybatisPlusConfiguration {
 
-	/**
-	 * 创建租户维护处理器对象
-	 *
-	 * @return 处理后的租户维护处理器
-	 */
-	@Bean
-	@ConditionalOnMissingBean
-	public TenantHandler tenantHandler() {
-		return new io.tosimple.demo.common.data.tenant.TenantHandler();
-	}
+    /**
+     * 创建租户维护处理器对象
+     *
+     * @return 处理后的租户维护处理器
+     */
+    @Bean
+    @ConditionalOnMissingBean
+    public TenantHandler tenantHandler() {
+        return new io.tosimple.demo.common.data.tenant.TenantHandler();
+    }
 
-	/**
-	 * 分页插件
-	 *
-	 * @param tenantHandler 租户处理器
-	 * @return PaginationInterceptor
-	 */
-	@Bean
-	@ConditionalOnMissingBean
-	@ConditionalOnProperty(name = "mybatisPlus.tenantEnable", havingValue = "true", matchIfMissing = true)
-	public PaginationInterceptor paginationInterceptor(TenantHandler tenantHandler) {
-		PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
-		List<ISqlParser> sqlParserList = new ArrayList<>();
-		TenantSqlParser tenantSqlParser = new TenantSqlParser();
-		tenantSqlParser.setTenantHandler(tenantHandler);
-		sqlParserList.add(tenantSqlParser);
-		paginationInterceptor.setSqlParserList(sqlParserList);
-		return paginationInterceptor;
-	}
+    /**
+     * 分页插件
+     *
+     * @param tenantHandler 租户处理器
+     * @return PaginationInterceptor
+     */
+    @Bean
+    @ConditionalOnMissingBean
+    @ConditionalOnProperty(name = "mybatisPlus.tenantEnable", havingValue = "true", matchIfMissing = true)
+    public PaginationInterceptor paginationInterceptor(TenantHandler tenantHandler) {
+        PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
+        List<ISqlParser> sqlParserList = new ArrayList<>();
+        TenantSqlParser tenantSqlParser = new TenantSqlParser();
+        tenantSqlParser.setTenantHandler(tenantHandler);
+        sqlParserList.add(tenantSqlParser);
+        paginationInterceptor.setSqlParserList(sqlParserList);
+        return paginationInterceptor;
+    }
 
-	/**
-	 * pigx 默认数据权限处理
-	 *
-	 * @return
-	 */
-	@Bean
-	@ConditionalOnMissingBean
-	public DataScopeHandle dataScopeHandle() {
-		return new DefaultDatascopeHandle();
-	}
+    /**
+     * pigx 默认数据权限处理
+     *
+     * @return
+     */
+    @Bean
+    @ConditionalOnMissingBean
+    public DataScopeHandle dataScopeHandle() {
+        return new DefaultDatascopeHandle();
+    }
 
-	/**
-	 * 数据权限插件
-	 *
-	 * @return DataScopeInterceptor
-	 */
-	@Bean
-	@ConditionalOnMissingBean
-	@ConditionalOnBean(DataScopeHandle.class)
-	public DataScopeInterceptor dataScopeInterceptor() {
-		return new DataScopeInterceptor(dataScopeHandle());
-	}
+    /**
+     * 数据权限插件
+     *
+     * @return DataScopeInterceptor
+     */
+    @Bean
+    @ConditionalOnMissingBean
+    @ConditionalOnBean(DataScopeHandle.class)
+    public DataScopeInterceptor dataScopeInterceptor() {
+        return new DataScopeInterceptor(dataScopeHandle());
+    }
 }

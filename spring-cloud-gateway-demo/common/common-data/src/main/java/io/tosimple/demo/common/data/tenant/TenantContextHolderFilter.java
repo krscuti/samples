@@ -41,22 +41,22 @@ import javax.servlet.http.HttpServletResponse;
 @Order(Ordered.HIGHEST_PRECEDENCE)
 public class TenantContextHolderFilter extends GenericFilterBean {
 
-	@Override
-	@SneakyThrows
-	public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) {
-		HttpServletRequest request = (HttpServletRequest) servletRequest;
-		HttpServletResponse response = (HttpServletResponse) servletResponse;
+    @Override
+    @SneakyThrows
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) {
+        HttpServletRequest request = (HttpServletRequest) servletRequest;
+        HttpServletResponse response = (HttpServletResponse) servletResponse;
 
-		String tenantId = request.getHeader(CommonConstants.TENANT_ID);
-		log.debug("获取header中的租户ID为:{}", tenantId);
+        String tenantId = request.getHeader(CommonConstants.TENANT_ID);
+        log.debug("获取header中的租户ID为:{}", tenantId);
 
-		if (StrUtil.isNotBlank(tenantId)) {
-			io.tosimple.demo.common.data.tenant.TenantContextHolder.setTenantId(Integer.parseInt(tenantId));
-		} else {
-			io.tosimple.demo.common.data.tenant.TenantContextHolder.setTenantId(CommonConstants.TENANT_ID_1);
-		}
+        if (StrUtil.isNotBlank(tenantId)) {
+            io.tosimple.demo.common.data.tenant.TenantContextHolder.setTenantId(Integer.parseInt(tenantId));
+        } else {
+            io.tosimple.demo.common.data.tenant.TenantContextHolder.setTenantId(CommonConstants.TENANT_ID_1);
+        }
 
-		filterChain.doFilter(request, response);
-		io.tosimple.demo.common.data.tenant.TenantContextHolder.clear();
-	}
+        filterChain.doFilter(request, response);
+        io.tosimple.demo.common.data.tenant.TenantContextHolder.clear();
+    }
 }

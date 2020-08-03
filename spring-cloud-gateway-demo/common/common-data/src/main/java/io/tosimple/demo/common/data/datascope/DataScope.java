@@ -32,18 +32,18 @@ import java.util.List;
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class DataScope extends HashMap {
-	/**
-	 * 限制范围的字段名称
-	 */
-	private String scopeName = "dept_id";
+    /**
+     * 限制范围的字段名称
+     */
+    private String scopeName = "dept_id";
 
-	/**
-	 * 具体的数据范围
-	 */
-	private List<Integer> deptIds = new ArrayList<>();
+    /**
+     * 具体的数据范围
+     */
+    private List<Integer> deptIds = new ArrayList<>();
 
-	/**
-	 * 是否只查询本部门
-	 */
-	private Boolean isOnly = false;
+    /**
+     * 是否只查询本部门
+     */
+    private Boolean isOnly = false;
 }

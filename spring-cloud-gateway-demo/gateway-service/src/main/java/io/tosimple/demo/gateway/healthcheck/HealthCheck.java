@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthCheck {
     @RequestMapping(value = "/healthCheck",method = RequestMethod.GET)
     public String healthCheck() {
-        log.info("==========, healthCheck 服务状态检查被调用了");
+//        log.info("==========, healthCheck 服务状态检查被调用了");
         return "ok";
     }
 }

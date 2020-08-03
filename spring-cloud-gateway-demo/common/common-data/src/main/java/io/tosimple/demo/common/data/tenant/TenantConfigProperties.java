@@ -19,13 +19,13 @@ import java.util.List;
 @ConfigurationProperties(prefix = "pigx.tenant")
 public class TenantConfigProperties {
 
-	/**
-	 * 维护租户列名称
-	 */
-	private String column = "tenant_id";
+    /**
+     * 维护租户列名称
+     */
+    private String column = "tenant_id";
 
-	/**
-	 * 多租户的数据表集合
-	 */
-	private List<String> tables = new ArrayList<>();
+    /**
+     * 多租户的数据表集合
+     */
+    private List<String> tables = new ArrayList<>();
 }

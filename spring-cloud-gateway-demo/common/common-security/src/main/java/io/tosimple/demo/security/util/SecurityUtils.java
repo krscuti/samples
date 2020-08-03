@@ -37,53 +37,53 @@ import java.util.List;
  */
 @UtilityClass
 public class SecurityUtils {
-	/**
-	 * 获取Authentication
-	 */
-	public Authentication getAuthentication() {
-		return SecurityContextHolder.getContext().getAuthentication();
-	}
+    /**
+     * 获取Authentication
+     */
+    public Authentication getAuthentication() {
+        return SecurityContextHolder.getContext().getAuthentication();
+    }
 
-	/**
-	 * 获取用户
-	 *
-	 * @param authentication
-	 * @return PigxUser
-	 * <p>
-	 */
-	public SystemUser getUser(Authentication authentication) {
-		Object principal = authentication.getPrincipal();
-		if (principal instanceof SystemUser) {
-			return (SystemUser) principal;
-		}
-		return null;
-	}
+    /**
+     * 获取用户
+     *
+     * @param authentication
+     * @return PigxUser
+     * <p>
+     */
+    public SystemUser getUser(Authentication authentication) {
+        Object principal = authentication.getPrincipal();
+        if (principal instanceof SystemUser) {
+            return (SystemUser) principal;
+        }
+        return null;
+    }
 
-	/**
-	 * 获取用户
-	 */
-	public SystemUser getUser() {
-		Authentication authentication = getAuthentication();
-		return getUser(authentication);
-	}
+    /**
+     * 获取用户
+     */
+    public SystemUser getUser() {
+        Authentication authentication = getAuthentication();
+        return getUser(authentication);
+    }
 
-	/**
-	 * 获取用户角色信息
-	 *
-	 * @return 角色集合
-	 */
-	public List<Integer> getRoles() {
-		Authentication authentication = getAuthentication();
-		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
+    /**
+     * 获取用户角色信息
+     *
+     * @return 角色集合
+     */
+    public List<Integer> getRoles() {
+        Authentication authentication = getAuthentication();
+        Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
 
-		List<Integer> roleIds = new ArrayList<>();
-		authorities.stream()
-				.filter(granted -> StrUtil.startWith(granted.getAuthority(), SecurityConstants.ROLE))
-				.forEach(granted -> {
-					String id = StrUtil.removePrefix(granted.getAuthority(), SecurityConstants.ROLE);
-					roleIds.add(Integer.parseInt(id));
-				});
-		return roleIds;
-	}
+        List<Integer> roleIds = new ArrayList<>();
+        authorities.stream()
+                .filter(granted -> StrUtil.startWith(granted.getAuthority(), SecurityConstants.ROLE))
+                .forEach(granted -> {
+                    String id = StrUtil.removePrefix(granted.getAuthority(), SecurityConstants.ROLE);
+                    roleIds.add(Integer.parseInt(id));
+                });
+        return roleIds;
+    }
 
 }
