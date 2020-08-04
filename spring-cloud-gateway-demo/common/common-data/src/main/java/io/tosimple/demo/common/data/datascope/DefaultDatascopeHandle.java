@@ -39,7 +39,7 @@ import java.util.stream.Collectors;
  * <p>
  * 默认data scope 判断处理器
  */
-public class DefaultDatascopeHandle implements io.tosimple.demo.common.data.datascope.DataScopeHandle {
+public class DefaultDatascopeHandle implements DataScopeHandle {
     @Autowired
     private RemoteDataScopeService dataScopeService;
 

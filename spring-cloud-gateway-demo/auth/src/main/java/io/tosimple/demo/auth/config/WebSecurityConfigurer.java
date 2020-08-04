@@ -19,9 +19,9 @@
 
 package io.tosimple.demo.auth.config;
 
-import com.pig4cloud.pigx.common.security.handler.FormAuthenticationFailureHandler;
-import com.pig4cloud.pigx.common.security.handler.MobileLoginSuccessHandler;
-import com.pig4cloud.pigx.common.security.mobile.MobileSecurityConfigurer;
+import io.tosimple.demo.common.security.handler.FormAuthenticationFailureHandler;
+import io.tosimple.demo.common.security.handler.MobileLoginSuccessHandler;
+import io.tosimple.demo.common.security.mobile.MobileSecurityConfigurer;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -20,9 +20,9 @@
 package io.tosimple.demo.auth.config;
 
 import cn.hutool.core.util.StrUtil;
-import com.pig4cloud.pigx.common.core.constant.SecurityConstants;
-import com.pig4cloud.pigx.common.data.tenant.TenantContextHolder;
-import com.pig4cloud.pigx.common.security.component.PigxWebResponseExceptionTranslator;
+import io.tosimple.demo.common.core.constant.SecurityConstants;
+import io.tosimple.demo.common.data.tenant.TenantContextHolder;
+import io.tosimple.demo.common.security.component.PigxWebResponseExceptionTranslator;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.context.annotation.Bean;

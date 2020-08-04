@@ -51,12 +51,12 @@ public class TenantContextHolderFilter extends GenericFilterBean {
         log.debug("获取header中的租户ID为:{}", tenantId);
 
         if (StrUtil.isNotBlank(tenantId)) {
-            io.tosimple.demo.common.data.tenant.TenantContextHolder.setTenantId(Integer.parseInt(tenantId));
+            TenantContextHolder.setTenantId(Integer.parseInt(tenantId));
         } else {
-            io.tosimple.demo.common.data.tenant.TenantContextHolder.setTenantId(CommonConstants.TENANT_ID_1);
+            TenantContextHolder.setTenantId(CommonConstants.TENANT_ID_1);
         }
 
         filterChain.doFilter(request, response);
-        io.tosimple.demo.common.data.tenant.TenantContextHolder.clear();
+        TenantContextHolder.clear();
     }
 }
