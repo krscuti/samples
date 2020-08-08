@@ -9,8 +9,8 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>io.tosimple.demo</groupId>
-    <artifactId>admin</artifactId>
-    <name>admin</name>
+    <artifactId>upms-biz</artifactId>
+    <name>upms-biz</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
