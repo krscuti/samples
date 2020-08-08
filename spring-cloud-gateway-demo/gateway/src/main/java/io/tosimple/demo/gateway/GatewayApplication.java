@@ -9,17 +9,27 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
+//@SpringBootApplication(exclude = TransactionAutoConfiguration.class)
 @Slf4j
-@SpringBootApplication(exclude = TransactionAutoConfiguration.class)
+@SpringBootApplication
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-//@SpringCloudApplication
+//@SpringCloudApplication(same with @SpringBootApplication + @EnableDiscoveryClient + @EnableCircuitBreaker
 public class GatewayApplication {
 
     public static void main(String[] args) {
-//        System.setProperty("nacos.standalone", "true");
+//       System.setProperty("nacos.standalone", "true");
         SpringApplication.run(GatewayApplication.class, args);
         log.info("==========，gateway启动了");
+
+        //rules of gateway
+        //1. request with token -> filer -> service route
+        //2. request without token -> search public route find target route or deny (public route)
+        //3. request without token -> auth | to get a access token, then route to target service
+        //4. all request though filter, log and custom request
+
+        //all request go auth first to request authentication with token
+
     }
 
 }
