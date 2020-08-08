@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.filter;
+ */package io.tosimple.demo.gateway.filter;
 
 import cn.hutool.core.util.StrUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -28,7 +26,7 @@ import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/21 演示环境过滤处理
  */
 @Slf4j

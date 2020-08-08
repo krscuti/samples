@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
@@ -25,7 +23,7 @@ import io.tosimple.demo.common.security.exception.PigxAuth2Exception;
 import lombok.SneakyThrows;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/11/16
  * <p>
  * OAuth2 异常格式化

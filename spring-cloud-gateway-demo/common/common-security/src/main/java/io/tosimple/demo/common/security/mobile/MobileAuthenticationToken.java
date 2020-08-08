@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.mobile;
+ */package io.tosimple.demo.common.security.mobile;
 
 import lombok.SneakyThrows;
 import org.springframework.security.authentication.AbstractAuthenticationToken;
@@ -25,7 +23,7 @@ import org.springframework.security.core.SpringSecurityCoreVersion;
 import java.util.Collection;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/1/9 手机号登录令牌
  */
 public class MobileAuthenticationToken extends AbstractAuthenticationToken {

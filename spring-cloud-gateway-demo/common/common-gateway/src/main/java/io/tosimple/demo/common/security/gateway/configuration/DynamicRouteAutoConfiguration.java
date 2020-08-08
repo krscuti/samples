@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.configuration;
+ */package io.tosimple.demo.common.security.gateway.configuration;
 
 import io.tosimple.demo.common.core.constant.CacheConstants;
 import io.tosimple.demo.common.security.gateway.support.RouteCacheHolder;
@@ -41,7 +39,7 @@ import org.springframework.data.redis.listener.RedisMessageListenerContainer;
 import java.time.Duration;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/11/5
  * <p>
  * 动态路由配置类

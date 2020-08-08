@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.datascope;
+ */package io.tosimple.demo.common.data.datascope;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
@@ -39,7 +37,7 @@ import java.util.Properties;
 
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/12/26
  * <p>
  * mybatis 数据权限拦截器

@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.configuration;
+ */package io.tosimple.demo.common.security.gateway.configuration;
 
 import io.tosimple.demo.common.security.gateway.filter.GrayReactiveLoadBalancerClientFilter;
 import io.tosimple.demo.common.security.gateway.rule.GrayLoadBalancer;

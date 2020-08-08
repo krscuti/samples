@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.auth.handler;
+ */package io.tosimple.demo.auth.handler;
 
 import io.tosimple.demo.admin.api.entity.SysLog;
 import io.tosimple.demo.admin.api.feign.RemoteLogService;
@@ -34,7 +32,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/10/8
  */
 @Slf4j

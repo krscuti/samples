@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.core.sensitive;
+ */package io.tosimple.demo.common.core.sensitive;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.BeanProperty;
@@ -31,7 +29,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019-08-13
  * <p>
  * 脱敏序列化

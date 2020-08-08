@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.support;
+ */package io.tosimple.demo.common.security.gateway.support;
 
 import cn.hutool.core.collection.CollUtil;
 import io.tosimple.demo.common.core.constant.CacheConstants;
@@ -35,7 +33,7 @@ import reactor.core.publisher.Mono;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/10/31
  * <p>
  * redis 保存路由信息，优先级比配置文件高

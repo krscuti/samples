@@ -13,12 +13,10 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package com.alibaba.nacos.config;
+ */package com.alibaba.nacos.config;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019-10-31
  * <p>
  * 覆盖nacos 默认配置

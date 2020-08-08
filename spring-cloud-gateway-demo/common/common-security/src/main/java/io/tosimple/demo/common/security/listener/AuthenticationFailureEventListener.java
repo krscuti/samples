@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.listener;
+ */package io.tosimple.demo.common.security.listener;
 
 import io.tosimple.demo.common.security.handler.AuthenticationFailureHandler;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author
  * @date 2020/03/25 认证失败事件监听器
  */
 public class AuthenticationFailureEventListener implements ApplicationListener<AbstractAuthenticationFailureEvent> {

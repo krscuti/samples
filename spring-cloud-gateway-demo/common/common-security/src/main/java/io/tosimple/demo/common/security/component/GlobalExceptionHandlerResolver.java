@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import io.tosimple.demo.common.core.util.R;
 import lombok.extern.slf4j.Slf4j;
@@ -32,7 +30,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/30 全局异常处理器
  */
 @Slf4j

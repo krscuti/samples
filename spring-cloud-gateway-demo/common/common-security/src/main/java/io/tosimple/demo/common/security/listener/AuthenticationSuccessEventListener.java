@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.listener;
+ */package io.tosimple.demo.common.security.listener;
 
 import cn.hutool.core.collection.CollUtil;
 import io.tosimple.demo.common.security.handler.AuthenticationSuccessHandler;
@@ -31,7 +29,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/03/25 认证成功事件监听器
  */
 public class AuthenticationSuccessEventListener implements ApplicationListener<AuthenticationSuccessEvent> {

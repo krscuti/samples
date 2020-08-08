@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.support;
+ */package io.tosimple.demo.common.security.gateway.support;
 
 import cn.hutool.cache.Cache;
 import cn.hutool.cache.CacheUtil;
@@ -26,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019-08-16
  * <p>
  * 路由缓存工具类

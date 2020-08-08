@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.datascope;
+ */package io.tosimple.demo.common.data.datascope;
 
 import cn.hutool.core.util.StrUtil;
 import io.tosimple.demo.admin.api.entity.SysDeptRelation;
@@ -34,7 +32,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019-09-07
  * <p>
  * 默认data scope 判断处理器

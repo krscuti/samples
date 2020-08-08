@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.filter;
+ */package io.tosimple.demo.gateway.filter;
 
 import cn.hutool.core.codec.Base64;
 import cn.hutool.core.util.CharsetUtil;
@@ -54,7 +52,7 @@ import java.util.Map;
 import java.util.function.Function;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/1/8 密码解密工具类
  * <p>
  * 参考 ModifyRequestBodyGatewayFilterFactory 实现

@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.mobile;
+ */package io.tosimple.demo.common.security.mobile;
 
 import io.tosimple.demo.common.core.constant.SecurityConstants;
 import lombok.Getter;
@@ -37,7 +35,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/1/9 手机号登录验证filter
  */
 public class MobileAuthenticationFilter extends AbstractAuthenticationProcessingFilter {

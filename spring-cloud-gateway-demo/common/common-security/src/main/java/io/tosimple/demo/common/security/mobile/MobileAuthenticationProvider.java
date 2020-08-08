@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.mobile;
+ */package io.tosimple.demo.common.security.mobile;
 
 import io.tosimple.demo.common.security.component.PigxPreAuthenticationChecks;
 import io.tosimple.demo.common.security.service.PigxUserDetailsService;
@@ -32,7 +30,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsChecker;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/5 手机登录校验逻辑 验证码登录、社交登录
  */
 @Slf4j

@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/5/19
  * <p>
  * 验证码 缓存提供支持集群

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 import javax.sql.DataSource;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/03/25
  * <p>
  * 扩展 JdbcClientDetailsService 支持多租户

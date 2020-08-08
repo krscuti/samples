@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.filter;
+ */package io.tosimple.demo.common.security.gateway.filter;
 
 import io.tosimple.demo.common.security.gateway.rule.GrayLoadBalancer;
 import lombok.extern.slf4j.Slf4j;
@@ -35,7 +33,7 @@ import reactor.core.publisher.Mono;
 import java.net.URI;
 
 /**
- * @author lengleng
+ * @author
  * @date 2020/1/11
  */
 @Slf4j

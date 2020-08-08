@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.config;
+ */package io.tosimple.demo.gateway.config;
 
 import io.tosimple.demo.gateway.handler.*;
 import lombok.AllArgsConstructor;
@@ -28,7 +26,7 @@ import org.springframework.web.reactive.function.server.RouterFunction;
 import org.springframework.web.reactive.function.server.RouterFunctions;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/7/5 路由配置信息
  */
 @Slf4j

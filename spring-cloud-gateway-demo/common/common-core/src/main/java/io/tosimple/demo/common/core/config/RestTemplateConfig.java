@@ -13,16 +13,14 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.core.config;
+ */package io.tosimple.demo.common.core.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/16 RestTemplate
  */
 @Configuration

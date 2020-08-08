@@ -13,15 +13,13 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.enums;
+ */package io.tosimple.demo.common.data.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/12/26
  * <p>
  * 数据权限类型

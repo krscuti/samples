@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.admin.api.feign;
+ */package io.tosimple.demo.admin.api.feign;
 
 import io.tosimple.demo.admin.api.entity.SysDeptRelation;
 import io.tosimple.demo.admin.api.entity.SysRole;
@@ -30,7 +28,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019-09-07
  * <p>
  * 远程数据权限调用接口

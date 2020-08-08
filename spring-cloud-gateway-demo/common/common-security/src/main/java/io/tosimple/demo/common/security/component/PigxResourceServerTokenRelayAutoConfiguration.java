@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import org.springframework.boot.autoconfigure.AutoConfigureAfter;
 import org.springframework.boot.autoconfigure.condition.AllNestedConditions;
@@ -34,7 +32,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.R
 import java.lang.annotation.*;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019/4/14 注入AccessTokenContextRelay 解决feign 传递token 为空问题
  */
 @Configuration

@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.mybatis;
+ */package io.tosimple.demo.common.data.mybatis;
 
 import com.baomidou.mybatisplus.core.parser.ISqlParser;
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
@@ -37,7 +35,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author
  * @date 2020-02-08
  */
 @Configuration

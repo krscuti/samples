@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.handler;
+ */package io.tosimple.demo.gateway.handler;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,7 +31,7 @@ import springfox.documentation.swagger.web.SecurityConfigurationBuilder;
 import java.util.Optional;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018-07-19 SwaggerSecurityHandler
  */
 @Slf4j

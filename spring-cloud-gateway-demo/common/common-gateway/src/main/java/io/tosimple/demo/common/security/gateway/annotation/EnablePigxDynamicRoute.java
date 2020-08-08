@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.annotation;
+ */package io.tosimple.demo.common.security.gateway.annotation;
 
 import io.tosimple.demo.common.security.gateway.configuration.DynamicRouteAutoConfiguration;
 import org.springframework.context.annotation.Import;
@@ -23,7 +21,7 @@ import org.springframework.context.annotation.Import;
 import java.lang.annotation.*;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/11/5
  * <p>
  * 开启pigx 动态路由

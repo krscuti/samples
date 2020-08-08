@@ -13,16 +13,14 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.social;
+ */package io.tosimple.demo.common.security.social;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/8/16 微信登录配置
  */
 @Data

@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.handler;
+ */package io.tosimple.demo.gateway.handler;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -30,7 +28,7 @@ import reactor.core.publisher.Mono;
 import springfox.documentation.swagger.web.SwaggerResourcesProvider;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018-07-19 SwaggerResourceHandler
  */
 @Slf4j

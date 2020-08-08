@@ -7,7 +7,7 @@ import org.springframework.web.client.DefaultResponseErrorHandler;
 import java.io.IOException;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/4/29
  * <p>
  * 重写默认的 响应失败处理器，400 不作为异常

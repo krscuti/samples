@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import cn.hutool.http.HttpStatus;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -41,7 +39,7 @@ import java.util.Locale;
 /**
  * 客户端异常处理 {@link AuthenticationException } 不同细化异常处理
  *
- * @author lengleng
+ * @author 
  * @date 2020-06-14
  */
 @Slf4j

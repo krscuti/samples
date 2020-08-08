@@ -42,7 +42,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/5 手机号登录成功，返回oauth token
  */
 @Slf4j

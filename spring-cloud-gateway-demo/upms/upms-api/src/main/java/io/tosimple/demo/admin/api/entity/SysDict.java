@@ -30,7 +30,7 @@ import java.time.LocalDateTime;
 /**
  * 字典表
  *
- * @author lengleng
+ * @author
  * @date 2019/03/19
  */
 @Data

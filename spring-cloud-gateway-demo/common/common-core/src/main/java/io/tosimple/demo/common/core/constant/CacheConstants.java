@@ -1,7 +1,7 @@
 package io.tosimple.demo.common.core.constant;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019-04-28
  * <p>
  * 缓存的key 常量

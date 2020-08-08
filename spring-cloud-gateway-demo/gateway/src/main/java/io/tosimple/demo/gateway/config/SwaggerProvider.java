@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.config;
+ */package io.tosimple.demo.gateway.config;
 
 import lombok.AllArgsConstructor;
 import org.springframework.cloud.gateway.route.RouteDefinition;

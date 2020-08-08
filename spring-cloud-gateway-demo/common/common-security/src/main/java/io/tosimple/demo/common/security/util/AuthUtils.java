@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.util;
+ */package io.tosimple.demo.common.security.util;
 
 import cn.hutool.core.codec.Base64;
 import lombok.SneakyThrows;
@@ -27,7 +25,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/5/13 认证授权相关工具类
  */
 @Slf4j

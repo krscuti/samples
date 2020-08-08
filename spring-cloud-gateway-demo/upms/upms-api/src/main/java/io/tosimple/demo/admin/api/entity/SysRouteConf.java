@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.admin.api.entity;
+ */package io.tosimple.demo.admin.api.entity;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
@@ -33,7 +31,7 @@ import java.time.LocalDateTime;
 /**
  * 路由
  *
- * @author lengleng
+ * @author 
  * @date 2018-11-06 10:17:18
  */
 @Data

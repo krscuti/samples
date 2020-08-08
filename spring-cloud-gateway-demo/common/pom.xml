@@ -20,6 +20,7 @@
         <module>common-feign</module>
         <module>common-gateway</module>
         <module>common-sentinel</module>
+        <module>common-log</module>
     </modules>
 
 </project>

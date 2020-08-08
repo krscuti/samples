@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.rule;
+ */package io.tosimple.demo.common.security.gateway.rule;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.map.MapUtil;
@@ -33,7 +31,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/1/12
  * <p>
  * 基于客户端版本号灰度路由

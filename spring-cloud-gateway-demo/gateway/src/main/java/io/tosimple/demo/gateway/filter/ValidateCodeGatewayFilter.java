@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.filter;
+ */package io.tosimple.demo.gateway.filter;
 
 import cn.hutool.core.util.StrUtil;
 import com.anji.captcha.model.vo.CaptchaVO;
@@ -47,7 +45,7 @@ import org.springframework.stereotype.Component;
 import reactor.core.publisher.Mono;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/5/19 登录逻辑验证码处理
  */
 @Slf4j

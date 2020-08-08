@@ -13,16 +13,14 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.exception;
+ */package io.tosimple.demo.common.security.exception;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.tosimple.demo.common.security.component.PigxAuth2ExceptionSerializer;
 import org.springframework.http.HttpStatus;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/7/8
  */
 @JsonSerialize(using = PigxAuth2ExceptionSerializer.class)

@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.interceptor;
+ */package io.tosimple.demo.common.security.interceptor;
 
 import cn.hutool.core.collection.CollUtil;
 import io.tosimple.demo.common.core.constant.SecurityConstants;
@@ -29,7 +27,7 @@ import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResour
 import java.util.Collection;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/13 扩展OAuth2FeignRequestInterceptor
  */
 @Slf4j

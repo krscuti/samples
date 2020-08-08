@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.StrUtil;
@@ -41,7 +39,7 @@ import java.util.Map;
 import java.util.Optional;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019-03-07
  * <p>
  * 根据checktoken 的结果转化用户信息

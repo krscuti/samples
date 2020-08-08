@@ -13,15 +13,13 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.rule;
+ */package io.tosimple.demo.common.security.gateway.rule;
 
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.http.server.reactive.ServerHttpRequest;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/1/12
  * <p>
  * 灰度路由

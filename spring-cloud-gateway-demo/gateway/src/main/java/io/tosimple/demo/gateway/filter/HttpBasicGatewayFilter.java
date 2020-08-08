@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.filter;
+ */package io.tosimple.demo.gateway.filter;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilter;
@@ -28,7 +26,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/10/30
  * <p>
  * 自定义basic认证，针对特殊场景使用

@@ -14,9 +14,7 @@
  *  * See the License for the specific language governing permissions and
  *  * limitations under the License.
  *
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;

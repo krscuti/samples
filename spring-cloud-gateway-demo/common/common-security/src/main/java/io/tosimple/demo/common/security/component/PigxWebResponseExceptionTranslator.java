@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import io.tosimple.demo.common.security.exception.*;
 import lombok.extern.slf4j.Slf4j;
@@ -38,7 +36,7 @@ import org.springframework.web.HttpRequestMethodNotSupportedException;
 import java.util.Locale;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020-06-20 OAutH Server 异常处理,重写oauth 默认实现
  */
 @Slf4j

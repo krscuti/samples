@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import cn.hutool.core.util.StrUtil;
 import io.tosimple.demo.common.core.constant.SecurityConstants;
@@ -31,7 +29,7 @@ import org.springframework.security.access.AccessDeniedException;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/11/26
  * <p>
  * 服务间接口不鉴权处理逻辑

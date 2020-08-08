@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.annotation;
+ */package io.tosimple.demo.common.security.annotation;
 
 import io.tosimple.demo.common.security.component.PigxResourceServerAutoConfiguration;
 import io.tosimple.demo.common.security.component.PigxSecurityBeanDefinitionRegistrar;
@@ -26,7 +24,7 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.E
 import java.lang.annotation.*;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/11/10
  * <p>
  * 资源服务注解

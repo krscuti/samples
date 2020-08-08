@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.mobile;
+ */package io.tosimple.demo.common.security.mobile;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.tosimple.demo.common.security.component.ResourceAuthExceptionEntryPoint;
@@ -32,7 +30,7 @@ import org.springframework.security.web.authentication.AuthenticationSuccessHand
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/5 手机号登录配置入口
  */
 @Getter

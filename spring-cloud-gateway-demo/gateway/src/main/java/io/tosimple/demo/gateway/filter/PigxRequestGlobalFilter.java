@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.gateway.filter;
+ */package io.tosimple.demo.gateway.filter;
 
 import io.tosimple.demo.common.core.constant.SecurityConstants;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -34,7 +32,7 @@ import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.G
 import static org.springframework.cloud.gateway.support.ServerWebExchangeUtils.addOriginalRequestUrl;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/10/8
  * <p>
  * 全局拦截器，作用所有的微服务

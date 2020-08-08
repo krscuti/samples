@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.handler;
+ */package io.tosimple.demo.common.security.handler;
 
 import cn.hutool.core.util.CharsetUtil;
 import cn.hutool.http.HttpUtil;
@@ -29,7 +27,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019-08-20
  * <p>
  * 表单登录失败处理逻辑

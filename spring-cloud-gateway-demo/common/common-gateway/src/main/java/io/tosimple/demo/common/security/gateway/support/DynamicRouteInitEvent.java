@@ -13,14 +13,12 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.support;
+ */package io.tosimple.demo.common.security.gateway.support;
 
 import org.springframework.context.ApplicationEvent;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/11/5
  * <p>
  * 路由初始化事件

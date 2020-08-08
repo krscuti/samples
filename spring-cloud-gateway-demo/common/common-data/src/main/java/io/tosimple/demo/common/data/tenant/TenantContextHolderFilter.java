@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.tenant;
+ */package io.tosimple.demo.common.data.tenant;
 
 import cn.hutool.core.util.StrUtil;
 import io.tosimple.demo.common.core.constant.CommonConstants;
@@ -33,7 +31,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/9/13
  */
 @Slf4j

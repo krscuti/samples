@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.sentinel.handle;
+ */package io.tosimple.demo.common.security.sentinel.handle;
 
 import cn.hutool.http.ContentType;
 import cn.hutool.json.JSONUtil;
@@ -29,7 +27,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019-10-11
  * <p>
  * 降级 限流策略

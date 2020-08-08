@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.gateway.vo;
+ */package io.tosimple.demo.common.security.gateway.vo;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,7 +22,7 @@ import org.springframework.cloud.gateway.route.RouteDefinition;
 import java.io.Serializable;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/10/31
  * <p>
  * 扩展此类支持序列化a See RouteDefinition.class

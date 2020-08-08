@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.util;
+ */package io.tosimple.demo.common.security.util;
 
 import cn.hutool.core.util.StrUtil;
 import io.tosimple.demo.common.core.constant.SecurityConstants;

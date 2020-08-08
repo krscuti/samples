@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020-02-17
  * <p>
  * 菜单类型

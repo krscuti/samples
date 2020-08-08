@@ -4,7 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020-01-19
  * <p>
  * 前端类型类型

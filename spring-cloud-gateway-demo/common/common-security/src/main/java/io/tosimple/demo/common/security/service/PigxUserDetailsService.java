@@ -21,7 +21,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/8/15
  */
 public interface PigxUserDetailsService extends UserDetailsService {

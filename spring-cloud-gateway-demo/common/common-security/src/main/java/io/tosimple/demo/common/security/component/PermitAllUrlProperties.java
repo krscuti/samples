@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import cn.hutool.core.util.ReUtil;
 import io.tosimple.demo.common.security.annotation.Inner;
@@ -40,7 +38,7 @@ import java.util.Optional;
 import java.util.regex.Pattern;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019/4/13
  * <p>
  * 资源服务器对外直接暴露URL,如果设置contex-path 要特殊处理

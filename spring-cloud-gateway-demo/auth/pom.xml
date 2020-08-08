@@ -107,6 +107,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
+        <dependency>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>common-log</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
     <build>

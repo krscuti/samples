@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import io.tosimple.demo.common.core.constant.SecurityConstants;
 import io.tosimple.demo.common.security.service.PigxUser;
@@ -28,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019-09-17
  * <p>
  * token增强，客户端模式不增强。

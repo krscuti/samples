@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import cn.hutool.core.util.ArrayUtil;
 import lombok.extern.slf4j.Slf4j;
@@ -29,7 +27,7 @@ import org.springframework.util.StringUtils;
 import java.util.Collection;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/6/22 接口权限判断工具
  */
 @Slf4j

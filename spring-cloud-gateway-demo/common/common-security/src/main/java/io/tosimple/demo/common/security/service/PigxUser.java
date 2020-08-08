@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.service;
+ */package io.tosimple.demo.common.security.service;
 
 import lombok.Getter;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
@@ -26,7 +24,7 @@ import org.springframework.security.core.userdetails.User;
 import java.util.Collection;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2020/4/16 扩展用户信息
  */
 public class PigxUser extends User {

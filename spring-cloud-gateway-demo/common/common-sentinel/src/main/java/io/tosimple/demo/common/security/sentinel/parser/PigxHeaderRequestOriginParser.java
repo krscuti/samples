@@ -13,16 +13,14 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.sentinel.parser;
+ */package io.tosimple.demo.common.security.sentinel.parser;
 
 import com.alibaba.csp.sentinel.adapter.spring.webmvc.callback.RequestOriginParser;
 
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2019-10-11
  * <p>
  * sentinel 请求头解析判断

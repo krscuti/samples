@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.datascope;
+ */package io.tosimple.demo.common.data.datascope;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -25,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/8/30
  * 数据权限查询参数
  */

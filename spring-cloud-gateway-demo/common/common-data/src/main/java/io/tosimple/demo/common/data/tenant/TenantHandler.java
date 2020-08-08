@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.data.tenant;
+ */package io.tosimple.demo.common.data.tenant;
 
 import lombok.extern.slf4j.Slf4j;
 import net.sf.jsqlparser.expression.Expression;
@@ -24,7 +22,7 @@ import net.sf.jsqlparser.expression.NullValue;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018-12-26
  * <p>
  * 租户维护处理器

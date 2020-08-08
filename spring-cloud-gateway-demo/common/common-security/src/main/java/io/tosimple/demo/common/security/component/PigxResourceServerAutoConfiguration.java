@@ -13,9 +13,7 @@
  * contributors may be used to endorse or promote products derived from
  * this software without specific prior written permission.
  * Author: lengleng (wangiegie@gmail.com)
- */
-
-package io.tosimple.demo.common.security.component;
+ */package io.tosimple.demo.common.security.component;
 
 import io.tosimple.demo.common.security.handler.RestResponseErrorHandler;
 import org.springframework.beans.BeansException;
@@ -32,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * @author lengleng
+ * @author 
  * @date 2018/11/10
  */
 @ComponentScan("io.tosimple.demo.common.security")
