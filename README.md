@@ -7,3 +7,6 @@
 - add-qualifiers
 - add-lifecycle
 - add-configuration_and_bean
+
+
+#### it is a sample spring cloud project learned from pigx, If Violated your rights, please contact me to remove
