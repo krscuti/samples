@@ -3,10 +3,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.0.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <artifactId>upms</artifactId>
+        <groupId>io.tosimple.demo</groupId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>io.tosimple.demo</groupId>
     <artifactId>upms-biz</artifactId>
@@ -18,23 +17,93 @@
     </properties>
 
     <dependencies>
+        <!--upms api、model 模块-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>upms-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
-
+        <!--日志处理-->
+        <!--<dependency>
+            <groupId>com.pig4cloud</groupId>
+            <artifactId>pigx-common-log</artifactId>
+        </dependency>-->
+        <!--swagger-->
+        <!--<dependency>
+            <groupId>com.pig4cloud</groupId>
+            <artifactId>pigx-common-swagger</artifactId>
+        </dependency>-->
+        <!--路由控制-->
+        <!--<dependency>
+            <groupId>com.pig4cloud</groupId>
+            <artifactId>pigx-common-gray</artifactId>
+        </dependency>-->
+        <!--文件系统-->
+        <!--<dependency>
+            <groupId>com.pig4cloud</groupId>
+            <artifactId>pigx-common-oss</artifactId>
+        </dependency>-->
+        <dependency>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>common-data</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--注册中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--spring security 、oauth、jwt依赖-->
+        <dependency>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>common-security</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--支持动态路由配置 -->
+        <dependency>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>common-gateway</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--sentinel 依赖-->
+        <dependency>
+            <groupId>io.tosimple.demo</groupId>
+            <artifactId>common-sentinel</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!--mybatis-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <!-- druid 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+            <version>1.1.21</version>
+        </dependency>
+        <!--数据库-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+        <!--web 模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>

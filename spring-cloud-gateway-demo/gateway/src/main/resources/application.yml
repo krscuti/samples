@@ -1,0 +1,12 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: gateway-service-auth
+          uri: lb://auth #此配置的值注册到Nacos中服务提供者的spring.application.name的值
+          predicates:
+            - Path=/auth/**

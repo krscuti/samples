@@ -11,9 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
 
 //@SpringBootApplication(exclude = TransactionAutoConfiguration.class)
 @Slf4j
-@SpringBootApplication
-@EnableDiscoveryClient
-@EnableCircuitBreaker
+@SpringCloudApplication
+//@SpringBootApplication
+//@EnableDiscoveryClient
+//@EnableCircuitBreaker
 //@SpringCloudApplication(same with @SpringBootApplication + @EnableDiscoveryClient + @EnableCircuitBreaker
 public class GatewayApplication {
 

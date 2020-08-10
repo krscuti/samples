@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/auth-service")
 public class ExampleController {
 
     @RequestMapping(name="/hello", value = "/hello", method = RequestMethod.GET)

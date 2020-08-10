@@ -1,8 +1,8 @@
 package io.tosimple.demo.admin.api.dto;
 
-import com.pig4cloud.pigx.admin.api.vo.MenuVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import io.tosimple.demo.admin.api.vo.MenuVO;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 

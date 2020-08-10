@@ -1,1 +1,9 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    io.tosimple.demo.common.data.cache.RedisTemplateConfig,\
+    io.tosimple.demo.common.data.cache.RedisCacheManagerConfig,\
+    io.tosimple.demo.common.data.cache.RedisCacheAutoConfiguration,\
+    io.tosimple.demo.common.data.tenant.PigxTenantConfigProperties,\
+    io.tosimple.demo.common.data.tenant.TenantContextHolderFilter,\
+    io.tosimple.demo.common.data.tenant.PigxTenantConfiguration,\
+    io.tosimple.demo.common.data.mybatis.MybatisPlusConfiguration,\
+    io.tosimple.demo.common.data.resolver.WebMvcConfig

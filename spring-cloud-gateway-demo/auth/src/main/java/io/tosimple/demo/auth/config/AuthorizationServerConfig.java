@@ -31,7 +31,7 @@ import org.springframework.security.oauth2.provider.token.store.redis.RedisToken
 @Configuration
 @AllArgsConstructor
 @EnableAuthorizationServer
-public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
+	public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
 
 	private final ClientDetailsService pigxClientDetailsServiceImpl;
 
