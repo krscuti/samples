@@ -42,7 +42,7 @@ import javax.validation.Valid;
  * 字典表 前端控制器
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2019-03-19
  */
 @RestController

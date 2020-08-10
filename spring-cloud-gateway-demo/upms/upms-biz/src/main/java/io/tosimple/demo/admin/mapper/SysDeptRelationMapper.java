@@ -28,7 +28,7 @@ import org.apache.ibatis.annotations.Mapper;
  * Mapper 接口
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2018-02-12
  */
 @Mapper

@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019-09-07
  * <p>
  * 默认data scope 判断处理器

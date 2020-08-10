@@ -3,7 +3,7 @@ package io.tosimple.demo.admin.service;
 import com.pig4cloud.pigx.common.core.util.R;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/11/14
  */
 public interface MobileService {

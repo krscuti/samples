@@ -44,7 +44,7 @@ import java.util.stream.Collectors;
 /**
  * 租户
  *
- * @author lengleng
+ * @author
  * @date 2019-05-15 15:55:41
  */
 @Service

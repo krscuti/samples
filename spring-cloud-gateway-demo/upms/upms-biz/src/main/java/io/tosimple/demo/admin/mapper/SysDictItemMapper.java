@@ -23,7 +23,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 字典项
  *
- * @author lengleng
+ * @author
  * @date 2019/03/19
  */
 @Mapper

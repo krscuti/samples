@@ -6,7 +6,7 @@ import lombok.Getter;
 /**
  * 数据权限函数类型
  *
- * @author lengleng
+ * @author
  * @date 2020-06-17
  */
 @Getter

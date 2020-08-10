@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 
 /**
- * @author lengleng
+ * @author
  * @date 2020/2/8
  * <p>
  * feign 自动化配置

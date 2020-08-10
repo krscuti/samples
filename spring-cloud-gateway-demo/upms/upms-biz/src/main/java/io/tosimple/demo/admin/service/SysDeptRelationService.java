@@ -28,7 +28,7 @@ import com.pig4cloud.pigx.admin.api.entity.SysDeptRelation;
  * 服务类
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2018-02-12
  */
 public interface SysDeptRelationService extends IService<SysDeptRelation> {

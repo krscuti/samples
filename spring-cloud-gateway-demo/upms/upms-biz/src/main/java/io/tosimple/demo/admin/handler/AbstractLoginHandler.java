@@ -3,7 +3,7 @@ package io.tosimple.demo.admin.handler;
 import com.pig4cloud.pigx.admin.api.dto.UserInfo;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/11/18
  */
 public abstract class AbstractLoginHandler implements LoginHandler {

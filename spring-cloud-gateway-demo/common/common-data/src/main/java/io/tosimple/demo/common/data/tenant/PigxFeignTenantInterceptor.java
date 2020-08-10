@@ -6,7 +6,7 @@ import io.tosimple.demo.common.core.constant.CommonConstants;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/9/14
  */
 @Slf4j

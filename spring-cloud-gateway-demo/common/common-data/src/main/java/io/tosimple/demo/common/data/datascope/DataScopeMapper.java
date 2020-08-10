@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 若使用数据权限 Mapper继承此类
  *
- * @author lengleng
+ * @author
  * @date 2020-06-17
  */
 public interface DataScopeMapper<T> extends BaseMapper<T> {

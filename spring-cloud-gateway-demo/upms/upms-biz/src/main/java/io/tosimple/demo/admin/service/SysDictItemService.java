@@ -23,7 +23,7 @@ import com.pig4cloud.pigx.common.core.util.R;
 /**
  * 字典项
  *
- * @author lengleng
+ * @author
  * @date 2019/03/19
  */
 public interface SysDictItemService extends IService<SysDictItem> {

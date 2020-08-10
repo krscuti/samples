@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.Properties;
 
 /**
- * @author lengleng
+ * @author
  * @date 2020/5/27
  * <p>
  * mybatis 数据权限拦截器

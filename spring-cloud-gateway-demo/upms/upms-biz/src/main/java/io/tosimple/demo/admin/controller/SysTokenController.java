@@ -11,7 +11,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import java.util.Map;
 
 /**
- * @author lengleng
+ * @author
  * @date 2018/9/4 getTokenPage 管理
  */
 @RestController

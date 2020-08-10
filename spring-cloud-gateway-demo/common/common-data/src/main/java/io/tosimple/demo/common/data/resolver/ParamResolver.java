@@ -8,7 +8,7 @@ import io.tosimple.demo.common.core.util.SpringContextHolder;
 import lombok.experimental.UtilityClass;
 
 /**
- * @author lengleng
+ * @author
  * @date 2020/5/12
  * <p>
  * 系统参数配置解析器

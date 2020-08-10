@@ -31,7 +31,7 @@ import com.pig4cloud.pigx.common.core.util.R;
 import java.util.List;
 
 /**
- * @author lengleng
+ * @author
  * @date 2017/10/31
  */
 public interface SysUserService extends IService<SysUser> {

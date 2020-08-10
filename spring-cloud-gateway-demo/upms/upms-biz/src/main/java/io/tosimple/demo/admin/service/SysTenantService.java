@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 租户管理
  *
- * @author lengleng
+ * @author
  * @date 2019-05-15 15:55:41
  */
 public interface SysTenantService extends IService<SysTenant> {

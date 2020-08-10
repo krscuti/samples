@@ -27,7 +27,7 @@ import com.pig4cloud.pigx.admin.api.entity.SysOauthClientDetails;
  * 服务类
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2018-05-15
  */
 public interface SysOauthClientDetailsService extends IService<SysOauthClientDetails> {

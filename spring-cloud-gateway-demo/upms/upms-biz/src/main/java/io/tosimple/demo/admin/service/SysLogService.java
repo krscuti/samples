@@ -30,7 +30,7 @@ import java.util.List;
  * 日志表 服务类
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2017-11-20
  */
 public interface SysLogService extends IService<SysLog> {

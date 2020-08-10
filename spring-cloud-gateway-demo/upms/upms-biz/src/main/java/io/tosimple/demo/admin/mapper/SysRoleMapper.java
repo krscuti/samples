@@ -30,7 +30,7 @@ import java.util.List;
  * Mapper 接口
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2017-10-29
  */
 @Mapper

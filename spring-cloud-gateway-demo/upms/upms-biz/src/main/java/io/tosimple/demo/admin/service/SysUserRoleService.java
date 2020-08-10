@@ -27,7 +27,7 @@ import com.pig4cloud.pigx.admin.api.entity.SysUserRole;
  * 用户角色表 服务类
  * </p>
  *
- * @author lengleng
+ * @author
  * @since 2017-10-29
  */
 public interface SysUserRoleService extends IService<SysUserRole> {

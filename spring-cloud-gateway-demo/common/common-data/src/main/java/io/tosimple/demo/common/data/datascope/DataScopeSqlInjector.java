@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 支持自定义数据权限方法注入
  *
- * @author lengleng
+ * @author
  * @date 2020-06-17
  */
 public class DataScopeSqlInjector extends DefaultSqlInjector {

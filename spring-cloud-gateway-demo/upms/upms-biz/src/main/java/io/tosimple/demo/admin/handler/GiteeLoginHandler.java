@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019/4/8
  * <p>
  * 码云登录

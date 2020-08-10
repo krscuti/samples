@@ -16,7 +16,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 /**
- * @author lengleng
+ * @author
  * @date 2019年11月02日
  * <p>
  * 微信小程序
