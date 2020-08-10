@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
 /**
  * 对象脱敏注解
  *
- * @author mayee
+ * @author 
  * @version v1.0
  **/
 @Retention(RetentionPolicy.RUNTIME)

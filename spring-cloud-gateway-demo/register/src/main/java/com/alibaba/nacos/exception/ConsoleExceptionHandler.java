@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 /**
  * Exception handler for console module
  *
- * @author nkorange
+ * @author 
  * @since 1.2.0
  */
 @ControllerAdvice

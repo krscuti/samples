@@ -25,7 +25,7 @@ import java.util.Optional;
 /**
  * Miscellaneous utilities for web applications.
  *
- * @author L.cm
+ * @author 
  */
 @Slf4j
 @UtilityClass

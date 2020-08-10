@@ -14,7 +14,7 @@ import org.springframework.context.ApplicationEventPublisher;
 /**
  * 操作日志使用spring event异步入库
  *
- * @author L.cm
+ * @author
  */
 @Slf4j
 @Aspect

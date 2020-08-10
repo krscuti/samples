@@ -18,7 +18,7 @@ package com.alibaba.nacos.model;
 /**
  * Namespace
  *
- * @author diamond
+ * @author
  */
 public class Namespace {
 

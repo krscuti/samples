@@ -28,7 +28,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
 
 /**
- * @author <a href="mailto:huangxiaoyu1018@gmail.com">hxy1991</a>
+ * @author
  */
 @RestController("consoleHealth")
 @RequestMapping("/v1/console/health")

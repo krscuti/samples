@@ -1,8 +1,8 @@
 package io.tosimple.demo.admin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pig4cloud.pigx.admin.api.entity.SysFile;
-import com.pig4cloud.pigx.common.core.util.R;
+import io.tosimple.demo.admin.api.entity.SysFile;
+import io.tosimple.demo.common.core.util.R;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * 文件管理
  *
- * @author Luckly
+ * @author
  * @date 2019-06-18 17:18:42
  */
 public interface SysFileService extends IService<SysFile> {

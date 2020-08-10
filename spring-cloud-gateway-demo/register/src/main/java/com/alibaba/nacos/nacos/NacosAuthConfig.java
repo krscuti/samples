@@ -40,7 +40,7 @@ import org.springframework.web.cors.CorsUtils;
 /**
  * Spring security config
  *
- * @author Nacos
+ * @author 
  */
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)

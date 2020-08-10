@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Ribbon 配置
  *
- * @author L.cm
+ * @author 
  */
 @Getter
 @Setter

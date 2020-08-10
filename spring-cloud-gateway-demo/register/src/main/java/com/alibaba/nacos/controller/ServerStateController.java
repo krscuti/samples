@@ -26,7 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author xingxuechao on:2019/2/27 11:17 AM
+ * @author
  */
 @RestController
 @RequestMapping("/v1/console/server")

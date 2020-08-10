@@ -3,7 +3,7 @@ package io.tosimple.demo.common.core.constant;
 /**
  * 分页相关的参数
  *
- * @author lishangbu
+ * @author 
  * @date 2018/11/22
  */
 public interface PaginationConstants {

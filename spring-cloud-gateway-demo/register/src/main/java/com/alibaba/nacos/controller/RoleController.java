@@ -27,7 +27,7 @@ import org.springframework.web.bind.annotation.*;
 /**
  * Role operation controller
  *
- * @author nkorange
+ * @author 
  * @since 1.2.0
  */
 @RestController

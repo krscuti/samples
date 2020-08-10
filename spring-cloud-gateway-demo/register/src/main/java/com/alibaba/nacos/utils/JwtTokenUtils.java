@@ -35,7 +35,7 @@ import java.util.List;
 /**
  * Jwt token tool
  *
- * @author wfnuser
+ * @author 
  */
 @Component
 public class JwtTokenUtils {

@@ -23,7 +23,7 @@ import org.apache.ibatis.annotations.Mapper;
 /**
  * 公共参数配置
  *
- * @author Lucky
+ * @author 
  * @date 2019-04-29
  */
 @Mapper

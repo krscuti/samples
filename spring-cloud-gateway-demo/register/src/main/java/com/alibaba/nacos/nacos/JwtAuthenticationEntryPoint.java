@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * jwt auth fail point
  *
- * @author wfnuser
+ * @author 
  */
 @Component
 public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {

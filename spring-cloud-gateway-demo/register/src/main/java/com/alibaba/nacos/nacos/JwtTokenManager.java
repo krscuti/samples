@@ -33,8 +33,8 @@ import java.util.List;
 /**
  * JWT token manager
  *
- * @author wfnuser
- * @author nkorange
+ * @author
+ * @author
  */
 @Component
 public class JwtTokenManager {

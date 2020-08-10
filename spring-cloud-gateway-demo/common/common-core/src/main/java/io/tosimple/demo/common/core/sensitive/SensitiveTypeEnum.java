@@ -3,7 +3,7 @@ package io.tosimple.demo.common.core.sensitive;
 /**
  * 敏感信息枚举类
  *
- * @author mayee
+ * @author 
  * @version v1.0
  **/
 public enum SensitiveTypeEnum {

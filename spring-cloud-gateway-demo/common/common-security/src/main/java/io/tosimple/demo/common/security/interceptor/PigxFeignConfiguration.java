@@ -13,7 +13,7 @@ import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResour
 /**
  * fegin 配置增强
  *
- * @author L.cm
+ * @author
  */
 @Configuration
 @ConditionalOnClass(Feign.class)

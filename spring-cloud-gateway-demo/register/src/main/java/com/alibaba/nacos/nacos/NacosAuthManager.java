@@ -40,7 +40,7 @@ import java.util.List;
 /**
  * Builtin access control entry of Nacos
  *
- * @author nkorange
+ * @author 
  * @since 1.2.0
  */
 @Component

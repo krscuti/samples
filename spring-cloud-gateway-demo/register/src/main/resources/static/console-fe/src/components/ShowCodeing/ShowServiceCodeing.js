@@ -23,7 +23,7 @@ const TabPane = Tab.Item;
 /**
  *
  * Service Registration Sample Code Show Window
- * @author yongchao9  #2019年05月18日 下午4:26:19
+ * @author
  *
  */
 @ConfigProvider.config
@@ -107,7 +107,7 @@ import com.alibaba.nacos.api.naming.listener.EventListener;
 import com.alibaba.nacos.api.naming.listener.NamingEvent;
 
 /**
- * @author nkorange
+ * @author
  */
 public class NamingExample {
 
@@ -268,7 +268,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author xiaojing
+ * @author
  */
 @SpringBootApplication
 @EnableDiscoveryClient
@@ -311,7 +311,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 /**
- * @author xiaojing
+ * @author
  */
 @SpringBootApplication
 @EnableDiscoveryClient

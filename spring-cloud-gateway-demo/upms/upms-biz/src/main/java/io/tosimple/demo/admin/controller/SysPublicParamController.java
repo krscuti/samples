@@ -2,20 +2,21 @@ package io.tosimple.demo.admin.controller;
 
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.pig4cloud.pigx.admin.api.entity.SysPublicParam;
-import com.pig4cloud.pigx.admin.service.SysPublicParamService;
-import com.pig4cloud.pigx.common.core.util.R;
-import com.pig4cloud.pigx.common.log.annotation.SysLog;
-import com.pig4cloud.pigx.common.security.annotation.Inner;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.tosimple.demo.admin.api.entity.SysPublicParam;
+import io.tosimple.demo.admin.service.SysPublicParamService;
+import io.tosimple.demo.common.core.util.R;
+import io.tosimple.demo.common.log.annotation.SysLog;
+import io.tosimple.demo.common.security.annotation.Inner;
 import lombok.AllArgsConstructor;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * 公共参数
  *
- * @author Lucky
+ * @author
  * @date 2019-04-29
  */
 @RestController

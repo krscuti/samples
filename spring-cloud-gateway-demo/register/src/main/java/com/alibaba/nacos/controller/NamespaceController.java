@@ -37,7 +37,7 @@ import java.util.regex.Pattern;
 /**
  * namespace service
  *
- * @author Nacos
+ * @author
  */
 @RestController
 @RequestMapping("/v1/console/namespaces")
@@ -133,7 +133,7 @@ public class NamespaceController {
 	}
 
 	/**
-	 * @author klw(213539@qq.com)
+	 * @author
 	 * @Description: check namespaceId exist
 	 * @Date 2019/12/10 21:41
 	 * @param: namespaceId

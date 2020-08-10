@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * 公共参数配置
  *
- * @author Lucky
+ * @author
  * @date 2019-04-29
  */
 @Data

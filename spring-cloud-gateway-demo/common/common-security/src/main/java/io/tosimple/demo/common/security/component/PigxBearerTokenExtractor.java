@@ -28,7 +28,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 改造 {@link BearerTokenExtractor} 对公开权限的请求不进行校验
  *
- * @author caiqy
+ * @author
  * @date 2020.05.15
  */
 @Component

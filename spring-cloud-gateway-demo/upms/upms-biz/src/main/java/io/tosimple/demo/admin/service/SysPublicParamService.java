@@ -1,13 +1,13 @@
 package io.tosimple.demo.admin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.pig4cloud.pigx.admin.api.entity.SysPublicParam;
-import com.pig4cloud.pigx.common.core.util.R;
+import io.tosimple.demo.admin.api.entity.SysPublicParam;
+import io.tosimple.demo.common.core.util.R;
 
 /**
  * 公共参数配置
  *
- * @author Lucky
+ * @author
  * @date 2019-04-29
  */
 public interface SysPublicParamService extends IService<SysPublicParam> {

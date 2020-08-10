@@ -18,9 +18,9 @@ import java.util.TimeZone;
  * JacksonConfig 配置时间转换规则
  * {@link com.pig4cloud.pigx.common.core.jackson.PigxJavaTimeModule}、默认时区等
  *
- * @author L.cm
  * @author
- * @author lishangbu
+ * @author
+ * @author
  * @date 2020-06-15
  */
 @Configuration

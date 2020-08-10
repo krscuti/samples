@@ -33,8 +33,8 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * Custem user service
  *
- * @author wfnuser
- * @author nkorange
+ * @author 
+ * @author 
  */
 @Service
 public class NacosUserDetailsServiceImpl implements UserDetailsService {

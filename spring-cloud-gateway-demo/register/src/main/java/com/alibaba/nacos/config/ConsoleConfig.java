@@ -28,8 +28,8 @@ import org.springframework.web.filter.CorsFilter;
 import javax.annotation.PostConstruct;
 
 /**
- * @author yshen
- * @author nkorange
+ * @author
+ * @author
  * @since 1.2.0
  */
 @Component
