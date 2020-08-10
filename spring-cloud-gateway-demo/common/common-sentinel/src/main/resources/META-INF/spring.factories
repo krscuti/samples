@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    io.tosimple.demo.common.security.sentinel.SentinelAutoConfiguration
+    io.tosimple.demo.common.sentinel.SentinelAutoConfiguration

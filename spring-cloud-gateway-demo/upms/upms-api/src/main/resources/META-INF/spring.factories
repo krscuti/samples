@@ -1,0 +1,8 @@
+# 配置 feignclient 的全类名路径， 避免包名不规范无法扫描问题
+io.tosimple.demo.common.feign.PigxFeignAutoConfiguration=\
+  io.tosimple.demo.admin.api.feign.RemoteDataScopeService,\
+  io.tosimple.demo.admin.api.feign.RemoteLogService,\
+  io.tosimple.demo.admin.api.feign.RemoteParamService,\
+  io.tosimple.demo.admin.api.feign.RemoteTenantService,\
+  io.tosimple.demo.admin.api.feign.RemoteTokenService,\
+  io.tosimple.demo.admin.api.feign.RemoteUserService

@@ -1,19 +1,4 @@
-/*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * Redistributions of source code must retain the above copyright notice,
- * this list of conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright
- * notice, this list of conditions and the following disclaimer in the
- * documentation and/or other materials provided with the distribution.
- * Neither the name of the pig4cloud.com developer nor the names of its
- * contributors may be used to endorse or promote products derived from
- * this software without specific prior written permission.
- * Author: lengleng (wangiegie@gmail.com)
- */package io.tosimple.demo.common.data.datascope;
+package io.tosimple.demo.common.data.datascope;
 
 import java.util.List;
 
@@ -25,11 +10,11 @@ import java.util.List;
  */
 public interface DataScopeHandle {
 
-    /**
-     * 计算用户数据权限
-     *
-     * @param deptList
-     * @return
-     */
-    Boolean calcScope(List<Integer> deptList);
+	/**
+	 * 计算用户数据权限
+	 * @param deptList 部门ID，如果为空表示没有任何数据权限。
+	 * @return 返回true表示无需进行数据过滤处理，返回false表示需要进行数据过滤
+	 */
+	Boolean calcScope(List<Integer> deptList);
+
 }

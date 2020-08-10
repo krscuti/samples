@@ -1,19 +1,4 @@
-/*
- *    Copyright (c) 2018-2025, lengleng All rights reserved.
- *
- * Redistribution and use in source and binary forms, with or without
- * modification, are permitted provided that the following conditions are met:
- *
- * Redistributions of source code must retain the above copyright notice,
- * this list of conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright
- * notice, this list of conditions and the following disclaimer in the
- * documentation and/or other materials provided with the distribution.
- * Neither the name of the pig4cloud.com developer nor the names of its
- * contributors may be used to endorse or promote products derived from
- * this software without specific prior written permission.
- * Author: lengleng (wangiegie@gmail.com)
- */package io.tosimple.demo.common.data.datascope;
+package io.tosimple.demo.common.data.datascope;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.CollectionUtil;
@@ -35,95 +20,102 @@ import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
-
 /**
  * @author
- * @date 2018/12/26
+ * @date 2020/5/27
  * <p>
  * mybatis 数据权限拦截器
  */
 @Slf4j
 @AllArgsConstructor
-@Intercepts({@Signature(type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class})})
+@Intercepts({
+		@Signature(type = StatementHandler.class, method = "prepare", args = { Connection.class, Integer.class }) })
 public class DataScopeInterceptor extends AbstractSqlParserHandler implements Interceptor {
-    private final DataScopeHandle dataScopeHandle;
 
-    @Override
-    @SneakyThrows
-    public Object intercept(Invocation invocation) {
-        StatementHandler statementHandler = PluginUtils.realTarget(invocation.getTarget());
-        MetaObject metaObject = SystemMetaObject.forObject(statementHandler);
-        this.sqlParser(metaObject);
-        // 先判断是不是SELECT操作
-        MappedStatement mappedStatement = (MappedStatement) metaObject.getValue("delegate.mappedStatement");
-        if (!SqlCommandType.SELECT.equals(mappedStatement.getSqlCommandType())) {
-            return invocation.proceed();
-        }
+	private final DataScopeHandle dataScopeHandle;
 
-        BoundSql boundSql = (BoundSql) metaObject.getValue("delegate.boundSql");
-        String originalSql = boundSql.getSql();
-        Object parameterObject = boundSql.getParameterObject();
+	@Override
+	@SneakyThrows
+	public Object intercept(Invocation invocation) {
+		StatementHandler statementHandler = PluginUtils.realTarget(invocation.getTarget());
+		MetaObject metaObject = SystemMetaObject.forObject(statementHandler);
+		this.sqlParser(metaObject);
+		// 先判断是不是SELECT操作
+		MappedStatement mappedStatement = (MappedStatement) metaObject.getValue("delegate.mappedStatement");
+		if (!SqlCommandType.SELECT.equals(mappedStatement.getSqlCommandType())) {
+			return invocation.proceed();
+		}
 
-        //查找参数中包含DataScope类型的参数
-        DataScope dataScope = findDataScopeObject(parameterObject);
-        if (dataScope == null) {
-            return invocation.proceed();
-        }
+		BoundSql boundSql = (BoundSql) metaObject.getValue("delegate.boundSql");
+		String originalSql = boundSql.getSql();
+		Object parameterObject = boundSql.getParameterObject();
 
-        String scopeName = dataScope.getScopeName();
-        List<Integer> deptIds = dataScope.getDeptIds();
-        // 优先获取赋值数据
-        if (CollUtil.isEmpty(deptIds) && dataScopeHandle.calcScope(deptIds)) {
-            return invocation.proceed();
-        }
-        String join = CollectionUtil.join(deptIds, ",");
-        originalSql = "select * from (" + originalSql + ") temp_data_scope where temp_data_scope." + scopeName + " in (" + join + ")";
-        metaObject.setValue("delegate.boundSql.sql", originalSql);
-        return invocation.proceed();
-    }
+		// 查找参数中包含DataScope类型的参数
+		DataScope dataScope = findDataScopeObject(parameterObject);
+		if (dataScope == null) {
+			return invocation.proceed();
+		}
 
+		String scopeName = dataScope.getScopeName();
+		List<Integer> deptIds = dataScope.getDeptIds();
+		// 优先获取赋值数据
+		if (CollUtil.isEmpty(deptIds) && dataScopeHandle.calcScope(deptIds)) {
+			return invocation.proceed();
+		}
 
-    /**
-     * 生成拦截对象的代理
-     *
-     * @param target 目标对象
-     * @return 代理对象
-     */
-    @Override
-    public Object plugin(Object target) {
-        if (target instanceof StatementHandler) {
-            return Plugin.wrap(target, this);
-        }
-        return target;
-    }
+		if (deptIds.isEmpty()) {
+			originalSql = String.format("SELECT %s FROM (%s) temp_data_scope WHERE 1 = 2",
+					dataScope.getFunc().getType(), originalSql);
+		}
+		else {
+			String join = CollectionUtil.join(deptIds, ",");
+			originalSql = String.format("SELECT %s FROM (%s) temp_data_scope WHERE temp_data_scope.%s IN (%s)",
+					dataScope.getFunc().getType(), originalSql, scopeName, join);
+		}
 
-    /**
-     * mybatis配置的属性
-     *
-     * @param properties mybatis配置的属性
-     */
-    @Override
-    public void setProperties(Properties properties) {
+		metaObject.setValue("delegate.boundSql.sql", originalSql);
+		return invocation.proceed();
+	}
 
-    }
+	/**
+	 * 生成拦截对象的代理
+	 * @param target 目标对象
+	 * @return 代理对象
+	 */
+	@Override
+	public Object plugin(Object target) {
+		if (target instanceof StatementHandler) {
+			return Plugin.wrap(target, this);
+		}
+		return target;
+	}
 
-    /**
-     * 查找参数是否包括DataScope对象
-     *
-     * @param parameterObj 参数列表
-     * @return DataScope
-     */
-    private DataScope findDataScopeObject(Object parameterObj) {
-        if (parameterObj instanceof DataScope) {
-            return (DataScope) parameterObj;
-        } else if (parameterObj instanceof Map) {
-            for (Object val : ((Map<?, ?>) parameterObj).values()) {
-                if (val instanceof DataScope) {
-                    return (DataScope) val;
-                }
-            }
-        }
-        return null;
-    }
+	/**
+	 * mybatis配置的属性
+	 * @param properties mybatis配置的属性
+	 */
+	@Override
+	public void setProperties(Properties properties) {
+
+	}
+
+	/**
+	 * 查找参数是否包括DataScope对象
+	 * @param parameterObj 参数列表
+	 * @return DataScope
+	 */
+	private DataScope findDataScopeObject(Object parameterObj) {
+		if (parameterObj instanceof DataScope) {
+			return (DataScope) parameterObj;
+		}
+		else if (parameterObj instanceof Map) {
+			for (Object val : ((Map<?, ?>) parameterObj).values()) {
+				if (val instanceof DataScope) {
+					return (DataScope) val;
+				}
+			}
+		}
+		return null;
+	}
 
 }

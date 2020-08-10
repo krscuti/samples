@@ -6,6 +6,7 @@ import io.tosimple.demo.common.core.constant.SecurityConstants;
 import io.tosimple.demo.common.core.constant.ServiceNameConstants;
 import io.tosimple.demo.common.core.util.R;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestHeader;

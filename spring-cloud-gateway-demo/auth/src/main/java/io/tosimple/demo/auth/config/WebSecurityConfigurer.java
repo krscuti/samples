@@ -19,7 +19,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
 
 /**
- * @author 
+ * @author
  * @date 2018/6/22 认证相关配置
  */
 @Primary
@@ -46,7 +46,9 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
 	 */
 	@Override
 	public void configure(WebSecurity web) {
-		web.ignoring().antMatchers("/css/**");
+		web.ignoring().antMatchers("/static/css/**")
+				//过滤允许公共访问的资源，例：开发时放开所有权限
+				.antMatchers("/auth-service/**");
 	}
 
 	@Bean
