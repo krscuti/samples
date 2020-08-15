@@ -1,4 +1,4 @@
-#### project from https://vjedeqbnagm.angular.stackblitz.io/dashboard
+#### project from stackblitz.com
 This is a demostration angular project of angular.io **Offical Tutorial: Tour of Heroes**
 
 Downloaded from the link in 6th chapter, temporary link is:
